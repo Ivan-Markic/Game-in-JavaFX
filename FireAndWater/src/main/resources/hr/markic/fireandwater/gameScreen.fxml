@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.markic.fireandwater.controllers.GameScreenController">
+   <children>
+      <ImageView fx:id="ivBoy" fitHeight="140.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" x="20.0" y="220.0">
+         <image>
+            <Image url="@../../../assets/boy/boyStandingRight.png" />
+         </image></ImageView>
+      <ImageView fx:id="ivGirl" fitHeight="140.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" x="110.0" y="220.0">
+         <image>
+            <Image url="@../../../assets/girl/girlStandingLeft.png" />
+         </image></ImageView>
+      <Group fx:id="floorGroup">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" x="400.0" y="363.0">
+               <image>
+                  <Image url="@../../../assets/map/floor.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" x="10.0" y="363.0">
+               <image>
+                  <Image url="@../../../assets/map/floor.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" x="790.0" y="363.0">
+               <image>
+                  <Image url="@../../../assets/map/floor.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ivFire" fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" x="983.0" y="365.0">
+               <image>
+                  <Image url="@../../../assets/map/fireNeutral.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ivWater" fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" x="592.0" y="363.0">
+               <image>
+                  <Image url="@../../../assets/map/waterNeutral.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ivSlime" fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" x="203.0" y="365.0">
+               <image>
+                  <Image url="@../../../assets/map/slimeNeutral.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <ImageView fx:id="ivEndFloor" fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" x="1080.0" y="706.0">
+         <image>
+            <Image url="@../../../assets/map/floor.png" />
+         </image>
+      </ImageView>
+      <Group fx:id="diamondGroup">
+         <children>
+            <ImageView fx:id="ivFirstBlueDiamond" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" x="513.0" y="313.0">
+               <image>
+                  <Image url="@../../../assets/map/blueDiamond.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ivFirstRedDiamond" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" x="428.0" y="313.0">
+               <image>
+                  <Image url="@../../../assets/map/redDiamond.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ivSecondBlueDiamond" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" x="909.0" y="316.0">
+               <image>
+                  <Image url="@../../../assets/map/blueDiamond.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ivSecondRedDiamond" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" x="815.0" y="316.0">
+               <image>
+                  <Image url="@../../../assets/map/redDiamond.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <ImageView fx:id="ivBlueDiamond" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" x="10.0" y="60.0">
+         <image>
+            <Image url="@../../../assets/map/blueDiamond.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivRedDiamond" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" x="10.0" y="10.0">
+         <image>
+            <Image url="@../../../assets/map/redDiamond.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblRedDiamonds" layoutX="96.0" layoutY="15.0" text="0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBlueDiamonds" layoutX="96.0" layoutY="65.0" text="0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfMessage" focusTraversable="false" layoutX="72.0" layoutY="709.0" prefHeight="39.0" prefWidth="383.0" />
+      <Button fx:id="btnSend" focusTraversable="false" layoutX="471.0" layoutY="711.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="33.0" prefWidth="106.0" text="Send" />
+      <TextArea fx:id="taChat" editable="false" focusTraversable="false" layoutX="74.0" layoutY="437.0" prefHeight="264.0" prefWidth="503.0" />
+   </children>
+</AnchorPane>

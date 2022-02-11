@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.markic.fireandwater.controllers.EndScreenController">
+   <children>
+      <GridPane layoutX="400.0" layoutY="220.0" prefHeight="400.0" prefWidth="500.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ToggleButton fx:id="btnRestart" mnemonicParsing="false" onAction="#restartGame" prefHeight="100.0" prefWidth="300.0" text="Restart" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="btnHome" mnemonicParsing="false" onAction="#openHome" prefHeight="100.0" prefWidth="300.0" text="Home" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="btnExit" mnemonicParsing="false" onAction="#exitApplication" prefHeight="100.0" prefWidth="300.0" text="Exit" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </ToggleButton>
+         </children>
+      </GridPane>
+      <Label fx:id="lblText" layoutX="546.0" layoutY="30.0" prefHeight="179.0" prefWidth="214.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
